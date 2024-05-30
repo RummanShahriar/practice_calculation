@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumman</title>
+    <script>
+      function printEmail() {
+        const num1 = parseFloat(document.getElementById("number1").value);
+        const num2 = parseFloat(document.getElementById("number2").value);
+        const result = num1 + num2;
+        document.getElementById("result").innerText = ("Result:", result);
+      }
+    </script>
+  </head>
+  <body
+    style="
+      background-image: url(https://img.freepik.com/free-photo/digital-art-with-hands-holding-planet_23-2151064504.jpg?t=st=1717078928~exp=1717082528~hmac=7bbfc911d22034e3aa7b373d3e5797d11d3c61eaa010ddcace465811b4e1bf84&w=740);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+  >
+    <input id="number1" type="number" placeholder="number 1" />
+    <input id="number2" type="number" placeholder="number 2" />
+    <button onclick="printEmail()">Calculate</button>
+    <h3 style="font-size: 100px; color: red" id="result"></h3>
+  </body>
+</html>
